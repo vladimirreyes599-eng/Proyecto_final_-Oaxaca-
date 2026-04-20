@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oaxaca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>🌄 Lugares de Oaxaca 🌄</h1>
+
+        <!-- Menú de opciones -->
+        <div class="menu">
+            <button onclick="cambiarLugar('lugar1')">Monte Albán</button>
+            <button onclick="cambiarLugar('lugar2')">Hierve el Agua</button>
+            <button onclick="cambiarLugar('lugar3')">Centro Histórico</button>
+            <button onclick="cambiarLugar('lugar4')">Puerto Escondido</button>
+        </div>
+
+        <!-- Zona de contenido -->
+        <div class="caja-contenido">
+            <img id="imagen-lugar" src="montealban.jpg" alt="Imagen del lugar">
+            <h2 id="nombre-lugar">Monte Albán</h2>
+            <p id="info-lugar">Antigua capital zapoteca y zona arqueológica importante.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
