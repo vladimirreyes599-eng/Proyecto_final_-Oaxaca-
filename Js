@@ -1,0 +1,30 @@
+// Datos de los 4 lugares
+const lugares = {
+    lugar1: {
+        nombre: "Monte Albán",
+        imagen: "montealban.jpg",
+        informacion: "Zona arqueológica y antigua ciudad de la cultura zapoteca."
+    },
+    lugar2: {
+        nombre: "Hierve el Agua",
+        imagen: "hierveagua.jpg",
+        informacion: "Pozas naturales y formaciones rocosas únicas en la región."
+    },
+    lugar3: {
+        nombre: "Centro Histórico",
+        imagen: "centro.jpg",
+        informacion: "Arquitectura colonial, iglesias y gran riqueza cultural."
+    },
+    lugar4: {
+        nombre: "Puerto Escondido",
+        imagen: "puerto.jpg",
+        informacion: "Playas hermosas, clima cálido y famoso por el surf."
+    }
+};
+
+// Función para cambiar el contenido
+function cambiarLugar(opcion) {
+    document.getElementById("nombre-lugar").textContent = lugares[opcion].nombre;
+    document.getElementById("info-lugar").textContent = lugares[opcion].informacion;
+    document.getElementById("imagen-lugar").src = lugares[opcion].imagen;
+}
